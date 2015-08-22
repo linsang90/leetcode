@@ -7,8 +7,8 @@ public boolean canFinish(int numCourses, int[][] prerequisites) {
             map.put(i, new ArrayList<Integer>());
         }
         for(int i = 0; i < prerequisites.length; i++)  {
-               map.get(prerequisites[i][0]).add(prerequisites[i][1]);
-               indegree[prerequisites[i][1]]++;
+               map.get(prerequisites[i][1]).add(prerequisites[i][0]);
+               indegree[prerequisites[i][0]]++;
         }
         Queue<Integer> queue = new LinkedList<>();
         for(int i = 0; i < numCourses; i++) {

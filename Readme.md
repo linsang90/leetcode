@@ -1,2 +1,2 @@
-This is my leetcode repository.
-- Lin
+Code Practise on Leetcode.
+Hopefully done both Java and Python versions.
